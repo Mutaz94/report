@@ -7,7 +7,7 @@ contributes:
     pdf:
        documentclass: scrreprt
        template-partials: 
-          - partials/title.tex
+          - partials/before-body.tex
        toc: true 
        lof: true
        lot: true 
@@ -17,7 +17,8 @@ contributes:
           lof-title: Figures 
           lot-title: Tables 
        include-in-header: header.tex
-       mainfont: "Times New Roman"
-       sansfont: "Times New Roman" 
+       include-after-body: partials/gloss.tex
+        
+       
 
 
