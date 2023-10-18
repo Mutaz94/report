@@ -1,0 +1,23 @@
+title: Report
+author: Mutaz Jaber
+version: 1.0.0
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+    pdf:
+       documentclass: scrreprt
+       template-partials: 
+          - partials/title.tex
+       toc: true 
+       lof: true
+       lot: true 
+       toc-title: Contents
+       number-sections: true
+       crossref:
+          lof-title: Figures 
+          lot-title: Tables 
+       include-in-header: header.tex
+       mainfont: "Times New Roman"
+       sansfont: "Times New Roman" 
+
+

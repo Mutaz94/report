@@ -1,0 +1,47 @@
+\thispagestyle{empty} 
+\vskip2cm 
+{\centerline{\textbf{R IN PHARMA REPORT}}} 
+\vskip2cm 
+\begin{table}[!h]
+      \setlength{\tabcolsep}{5pt}  
+      \renewcommand{\arraystretch}{1.5}
+      \begin{tabularx}{\textwidth}{lX}
+            \midrule
+            \textbf{Report Number:} & $report$\\ 
+            \midrule
+            \textbf{Report Title:} & $title$ \\ 
+            \midrule 
+            \textbf{Study Drug:} &  Drug Name\\ 
+            \midrule
+            \textbf{Indication:} & Disease\\ 
+            \midrule 
+            \textbf{Study Numbers:} & 12344\\ 
+            \midrule 
+            \textbf{Sponser:} & Gilead Sciences, Inc. \newline 
+                        333 Lakeside Drive \newline
+                       Foster City, CA 94404\newline 
+                       USA\newline
+                       \\ 
+            \midrule 
+            \textbf{Prepared By:} & $for(author)$$author$$sep$ \newline $endfor$\\ 
+            \midrule 
+            \textbf{Reviewed By:} & $for(review)$$review$$sep$ \newline $endfor$ \\
+            \midrule 
+            \textbf{Approved By:} & $for(approve)$$approve$$sep$ \newline $endfor$\\
+            \midrule 
+            \textbf{Report Date:} & $date$\\ 
+            \midrule 
+            \textbf{Report Status:}  & 111111 \\
+            \midrule 
+      \end{tabularx}
+\end{table}
+\vskip0.5cm 
+$if(copyright)$
+\begin{center}
+{\textbf{CONFIDENTIAL}} 
+\begin{mdframed} 
+    {\normalsize $copyright$}
+\end{mdframed}
+\end{center}
+$endif$ 
+

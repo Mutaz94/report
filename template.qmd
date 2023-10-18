@@ -1,0 +1,54 @@
+---
+title: Report Template
+format: report-pdf
+cite-method: biblatex
+bibliography: bibliography.bib
+---
+
+```{r}
+#| echo: false 
+#| warning: false
+library(tidyverse)
+library(gt)
+```
+
+\begingroup\let\newpage\relax\printnoidxglossary[title=Terms and Abbreviations,toctitle=Terms and Abbreviations]\endgroup
+
+# SUMMARY {#sec-summary}
+
+## Graphic summary 
+This is a summary showing Theopyline data @fig-conc
+
+```{r}
+#| label: fig-conc
+#| fig-cap: Concentration time profile 
+ggplot(Theoph, aes(Time, conc)) + geom_point()
+```
+
+\newpage
+
+## Numerical summary
+
+This is a summary showing concentrations for the first individual @tbl-conc
+
+```{r}
+#| label: tbl-conc
+#| tbl-cap: Concentration for the first individual 
+Theoph |> 
+    filter(Subject == 1) |> 
+    gt()
+```
+
+# INTRODUCTION
+
+This is the start of introduction, and previously we saw [sec @sec-summary]
+
+I want to cite the base R package [@base]
+
+To use glossaries, we use `\gls` commands such as \gls{ADAM} or \gls{AE}
+
+# REFERENCES 
+
+::: {#refs}
+:::
+

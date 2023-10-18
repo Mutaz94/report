@@ -1,0 +1,21 @@
+% TODO: Add custom LaTeX header directives here
+\usepackage[headsepline,footsepline]{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\lohead{R in Pharma 2023}
+\rohead{Quarto Report}
+\lofoot{R in Pharma}
+\ifoot{\thepage}
+\cofoot{} % empty 
+\renewcommand*\chapterpagestyle{scrheadings}
+\usepackage{tabularx}
+\usepackage{mdframed}
+\usepackage[shortcuts,nonumberlist,toc]{glossaries}
+\loadglsentries{abbr.tex}
+\makenoidxglossaries
+\renewcommand*{\glspostdescription}{}
+\renewcommand*{\glsgroupskip}{}
+\renewcommand*{\glsnamefont}[1]{\textmd{#1}}
+\setlength{\glsdescwidth}{5.36in}
+\renewcommand\arraystretch{1.3}
+
+
