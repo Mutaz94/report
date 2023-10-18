@@ -3,8 +3,6 @@ title: Report Template
 format: report-pdf
 cite-method: biblatex
 bibliography: bibliography.bib
-mainfont: "Times New Roman"
-sansfont: "Times New Roman"
 ---
 
 ```{r}

@@ -18,6 +18,8 @@ contributes:
           lot-title: Tables 
        include-in-header: header.tex
        include-after-body: partials/gloss.tex
+       mainfont: "Times New Roman"
+       sansfont: "Times New Roman"
         
        
 
